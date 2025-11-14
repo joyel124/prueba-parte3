@@ -42,8 +42,6 @@ README.md
 - **descripcion** (string, requerido)
 - **estado** (string, requerido) — valores usados por la UI: `abierto`, `en_proceso`, `cerrado`
 
-**Autorización** (ejemplo): `allow.owner()` para que cada usuario vea/edite solo sus casos.
-
 ---
 
 ## Puesta en marcha (con Amplify)
