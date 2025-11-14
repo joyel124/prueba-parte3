@@ -17,7 +17,7 @@ El módulo de expedientes incluye formulario de alta/edición, listado en tabla 
 
 ## Requisitos
 - **Node.js 18+** y **npm**
-- Cuenta AWS con permisos para usar **Amplify**, **Cognito**, **AppSync**, **SSM**, **S3** y **CloudFormation** (si usas Amplify)
+- Cuenta AWS con permisos
 - Un **perfil AWS** válido si vas a usar Amplify Sandbox (ver más abajo)
 
 ---
@@ -40,7 +40,7 @@ README.md
 - **id** (string, autogenerado por el backend)
 - **nombre** (string, requerido)
 - **descripcion** (string, requerido)
-- **estado** (string, requerido) — valores usados por la UI: `abierto`, `en_proceso`, `cerrado`
+- **estado** (string, requerido) — valores usados por la UI: `Abierto`, `En Proceso`, `Cerrado`
 
 ---
 
