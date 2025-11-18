@@ -106,5 +106,4 @@ npm run build      # build de producción
 ---
 
 ## Despliegue
-- **Amplify Hosting**: conecta tu repo en Amplify Console y configura build (Next.js). El backend (Auth/Data) puede apuntar al stack de Sandbox o a un entorno dedicado.
 - **Vercel/Netlify**: si usas Amplify solo para datos, basta con que incluyas `amplify_outputs.json` en el build y configures las variables de entorno necesarias si cambias rutas.
