@@ -46,14 +46,13 @@ const STATUS_LABEL: Record<string, string> = {
 function getErrorMessage(e: unknown): string {
     if (e instanceof Error) return e.message;
     if (typeof e === "string") return e;
+
     if (e && typeof e === "object" && "message" in e) {
-        return String((e as any).message);
+        const { message } = e as { message?: unknown };
+        return typeof message === "string" ? message : String(message);
     }
-    try {
-        return JSON.stringify(e);
-    } catch {
-        return "Error desconocido";
-    }
+
+    return "Unknown error";
 }
 
 export default function CasesPage() {
