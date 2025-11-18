@@ -37,7 +37,6 @@ import { toast } from "sonner";
 const client = generateClient<Schema>();
 type Case = Schema["Case"]["type"];
 
-// Mapea valores internos -> etiquetas bonitas
 const STATUS_LABEL: Record<string, string> = {
     abierto: "Abierto",
     en_proceso: "En proceso",
@@ -48,7 +47,6 @@ function getErrorMessage(e: unknown): string {
     if (e instanceof Error) return e.message;
     if (typeof e === "string") return e;
     if (e && typeof e === "object" && "message" in e) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return String((e as any).message);
     }
     try {
